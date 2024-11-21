@@ -611,17 +611,19 @@
           display: flex;
       }
       .column-left {
-          flex: 60%; /* 左侧占60% */
-          margin: 10px;
-      }
+            flex: 60%; /* 左侧占60% */
+            margin: 10px;
+            position: relative; /* 使子元素绝对定位 */
+        }
       .column-right {
           flex: 40%; /* 右侧占40% */
           margin: 10px;
       }
       img {
-          max-width: 100%;
-          height: auto;
-      }
+            width: 100%; /* 使图片宽度占满容器 */
+            height: 100%; /* 使图片高度占满容器 */
+            object-fit: cover; /* 保持比例并填满容器 */
+        }
       audio {
           display: block;
           margin: 5px 0;
