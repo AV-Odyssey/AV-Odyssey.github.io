@@ -689,55 +689,112 @@
 </div>
 </section>
 
-
-
 <section class="section">
-  <div class="data-display">
-    <div class="container">
-      <div class="column-left">
-            <h2>图片 1</h2>
-            <img src="static/images/data_example/demo1/demo1-1.svg" alt="第一张图片" style="width: 50%;">
-        </div>
-        <div class="column-right">
-            <h2>音频和图片 2</h2>
-            <img src="static/images/data_example/demo1/5_133_1.png" alt="第二张图片" style="width: 15%;">
-        </div>
-        <div class="column-right">
-            <div class="audio-container">
-              <audio controls style="transform: scale(0.6)">
-                  <source src="static/images/data_example/demo1/5_133_1.wav" type="audio/mpeg" >
-                  您的浏览器不支持音频元素。
-              </audio>
+  <div class="container">
+    <div class="columns is-centered m-6">
+      <div class="column is-full has-text-centered content">
+        <h2 class="title is-3">Data Examples</h2>
+        <div class="content has-text-justified">
+          <p style="text-align: center;", class="mt-3"><strong>All data not from any existing audio-visual dataset.</strong>
+          </p>
+        <div class="box m-5">
+          <!-- 滑动的轮播容器 -->
+          <div id="results-carousel" class="carousel results-carousel">
+            <!-- 第一组内容 -->
+            <div class='content has-text-centered'>
+              <div class="columns">
+                <!-- 第一列：图片 1，竖向居中 -->
+                <div class="column is-half has-text-centered" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                  <h2>Question</h2>
+                  <img src="static/images/data_example/demo1/demo1-1.svg" alt="第一张图片" style="width: 90%; margin-bottom: 20px;">
+                </div>
+                <!-- 第二列：图片 2 + 音频 -->
+                <div class="column is-half has-text-centered" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                  <div style="margin-bottom: 30px;">
+                    <p>[img1]</p>
+                    <img src="static/images/data_example/demo1/5_133_1.png" alt="第二张图片" style="width: 35%; margin-bottom: 20px;">
+                  </div>
+                  <!-- 音频容器 -->
+                  <div class="audio-container" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; align-items: center; justify-items: center;">
+                    <div>
+                      <p>[audio1]</p>
+                      <audio controls style="transform: scale(0.8);">
+                        <source src="static/images/data_example/demo1/5_133_1.wav" type="audio/mpeg">
+                        您的浏览器不支持音频元素。
+                      </audio>
+                    </div>
+                    <div>
+                      <p>[audio2]</p>
+                      <audio controls style="transform: scale(0.8);">
+                        <source src="static/images/data_example/demo1/5_133_2.wav" type="audio/mpeg">
+                        您的浏览器不支持音频元素。
+                      </audio>
+                    </div>
+                    <div>
+                      <p>[audio3]</p>
+                      <audio controls style="transform: scale(0.8);">
+                        <source src="static/images/data_example/demo1/5_133_3.wav" type="audio/mpeg">
+                        您的浏览器不支持音频元素。
+                      </audio>
+                    </div>
+                    <div>
+                      <p>[audio4]</p>
+                      <audio controls style="transform: scale(0.8);">
+                        <source src="static/images/data_example/demo1/5_133_4.wav" type="audio/mpeg">
+                        您的浏览器不支持音频元素。
+                      </audio>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="column-right">
-          <div class="audio-container">
-              <audio controls style="transform: scale(0.6)">
-                  <source src="static/images/data_example/demo1/5_133_2.wav" type="audio/mpeg">
-                  您的浏览器不支持音频元素。
-              </audio>
+  
+            <!-- 第二组内容 -->
+            <div class='content has-text-centered'>
+              <div class="columns">
+                <!-- 第一列：图片 1，竖向居中 -->
+                <div class="column is-half has-text-centered" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                  <h2>Question</h2>
+                  <img src="static/images/data_example/demo2/demo2-1.svg" alt="第一张图片" style="width: 70%; margin-bottom: 20px;">
+                </div>
+                <!-- 第二列：图片 2 + 音频 -->
+                <div class="column is-half has-text-centered" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                  <!-- 音频（原来的图像） -->
+                  <div style="margin-bottom: 30px;">
+                    <p>[audio1]</p>
+                    <audio controls style="transform: scale(1.0);">
+                      <source src="static/images/data_example/demo2/9_79_1.wav" type="audio/mpeg">
+                      您的浏览器不支持音频元素。
+                    </audio>
+                  </div>
+                
+                  <!-- 图像容器（原来的音频容器） -->
+                  <div class="image-container" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; align-items: center; justify-items: center;">
+                    <div>
+                      <p>[img1]</p>
+                      <img src="static/images/data_example/demo2/9_79_1.png" alt="图片 1" style="width: 35%; margin-bottom: 10px;">
+                    </div>
+                    <div>
+                      <p>[img2]</p>
+                      <img src="static/images/data_example/demo2/9_79_2.png" alt="图片 2" style="width: 35%; margin-bottom: 10px;">
+                    </div>
+                    <div>
+                      <p>[img3]</p>
+                      <img src="static/images/data_example/demo2/9_79_3.png" alt="图片 3" style="width: 35%; margin-bottom: 10px;">
+                    </div>
+                    <div>
+                      <p>[img4]</p>
+                      <img src="static/images/data_example/demo2/9_79_4.png" alt="图片 4" style="width: 35%; margin-bottom: 10px;">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        <div class="column-right">
-            <div class="audio-container">
-              <audio controls style="transform: scale(0.6)">
-                  <source src="static/images/data_example/demo1/5_133_3.wav" type="audio/mpeg">
-                  您的浏览器不支持音频元素。
-              </audio>
-            </div>
-          </div>
-        <div class="column-right">
-            <div class="audio-container">
-              <audio controls style="transform: scale(0.6)">
-                  <source src="static/images/data_example/demo1/5_133_4.wav" type="audio/mpeg">
-                  您的浏览器不支持音频元素。
-              </audio>
-            </div>
-          </div>
         </div>
+      </div>
     </div>
-  </div>  
-</section>
+  </div>
 
             
 <section class="section">
