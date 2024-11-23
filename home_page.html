@@ -155,6 +155,20 @@
   </div>
 </section>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    updateRowNumbers();
+    document.querySelector("#results").addEventListener("click", updateRowNumbers);
+  });
+
+  function updateRowNumbers() {
+    const rows = document.querySelectorAll("#results tbody tr");
+    rows.forEach((row, index) => {
+      row.querySelector("td").innerText = index + 1;
+    });
+  }
+</script>
+
 
 <section class="section">
   <div class="container" style="margin-bottom: 2vh;">
@@ -170,24 +184,6 @@
     </div>
     <!--/ Overview. -->
   </div>
-</section>
-
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    updateRowNumbers();
-    document.querySelector("#results").addEventListener("click", updateRowNumbers);
-  });
-
-  function updateRowNumbers() {
-    const rows = document.querySelectorAll("#results tbody tr");
-    rows.forEach((row, index) => {
-      row.querySelector("td").innerText = index + 1;
-    });
-  }
-</script>
-
-<section class="section">
   <div class="container">
     
     <div class="columns is-centered">
